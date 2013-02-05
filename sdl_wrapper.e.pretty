@@ -1,0 +1,26 @@
+note
+	description: "Summary description for {SDL_WRAPPER}."
+	author: ""
+	date: "$Date$"
+	revision: "$Revision$"
+
+class
+	SDL_WRAPPER
+
+feature
+
+	frozen SDL_init (flags: NATURAL_32): INTEGER
+		external
+			"C (Uint32):int | <SDL.h>"
+		alias
+			"SDL_init"
+		end
+
+	frozen SDL_init_video: NATURAL_32
+		external
+			"C inline use <SDL.h>"
+		alias
+			"SDL_INIT_VIDEO"
+		end
+
+end
