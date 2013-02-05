@@ -14,12 +14,17 @@
 				<platform value="windows"/>
 			</condition>
 		</external_include>
+		<external_include location="/usr/include/SDL">
+			<condition>
+				<platform excluded_value="windows"/>
+			</condition>
+		</external_include>
 		<external_library location="../../../SDL-1.2.14/lib/libSDL.dll.a">
 			<condition>
 				<platform value="windows"/>
 			</condition>
 		</external_library>
-		<external_library location="-lsdl">
+		<external_library location="-lSDL">
 			<condition>
 				<platform excluded_value="windows"/>
 			</condition>
